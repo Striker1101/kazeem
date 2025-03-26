@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro to JavaScript</title>
+    <!-- //external -->
+    <script src="../JS/intro.js"></script>
+  </head>
+  <body>
+    <div>Lorem ipsum dolor sit amet.</div>
+
+    <!-- embedded / internal -->
+    <script>
+      console.log("welcome to js / emebedded ");
+
+      //variable  variable   assignment  data
+      // type     name
+
+      //variable declaration/initialization (how you save data)
+
+      //flexible
+      let sport = "football"; //new
+      var cloth = "pink"; //old
+
+      sport = "baseball";
+
+      //constant
+      const name = "kazeem";
+
+      const a = 5;
+      const b = 10;
+      const c = 4;
+      const d = a + b - c;
+
+      console.log(5 + 5 - 3);
+      console.log(d * 9);
+
+      //   datatype
+
+      //Primitive DataType //stores only one value
+      //   string; //alpha-numeric
+      // string is covered in single or double quote
+      const stringData = "this is a string, and its always covered in quite";
+      const stringDataTwo = "23423";
+      const nothing = "single string";
+      const single = "single";
+
+      // number
+      const numberOne = 20;
+      const numberTwo = -34;
+      const numberThree = 34.2;
+
+      //boolean
+      //consist of only two choices (true or false )
+      const isKazeemMale = true;
+      const isTodayFriday = false;
+
+      //null
+      const baby = null; //empty or nothing
+
+      //undefined
+      const countrySide = undefined; // no data available
+
+      //non Primitive DataType Type /stores only multiple value
+      //object
+      //it is covered in open and closing bracket {}
+      //it structure is property and value
+      //to access an object, you use . (dot)
+      //eg
+      // const schoolTeacherOneName = "sammy";
+      // const schoolTeacherTwoName = "joy";
+      // const schoolTeacherThreeName = "happy";
+      const school = {
+        name: "the bridge",
+        years: 20,
+        available: false,
+        classes: null,
+        teachers: {
+          teacher1: { name: "sammy", age: 34 },
+          teacher2: { name: "joy", age: 34 },
+          teacher3: { name: "happy", age: 34 },
+        },
+      };
+      // console.log(school.teachers.teacher3.name);
+
+      //array
+      //it is covered in block bracket []
+      // it structured using indexes (indexes starts from zero)
+      //an array is accessed using block bracket with the needed index in-between
+      //eg
+
+      const zero = 0;
+      const one = 1;
+
+      const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+      const alpha = ["a", "b", "c", "d", "e", "f", "e", "f", "g", "h"];
+      const mixed = [
+        "cold", //0 string
+        2342, //1 number
+        { age: 23, name: "sammy" }, //2 object
+        false,
+        ["sam is lying "],
+      ];
+      // console.log(mixed[2].name);
+    </script>
+  </body>
+</html>
