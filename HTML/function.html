@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fucntions</title>
+</head>
+
+<body>
+
+    <script>
+        //  functions are how to write down our actions in code.
+
+        //  functions are reusable blocks of code that can be called with a name.
+
+        // function functionName(){}
+        //  functions can take inputs, called parameters,parentheses,augument and return outputs.
+        // ()  this takes in parameters/inputs
+        // {}  this contain the statment on the function  
+
+        function greet(name) {
+            console.log("my name is " + name);
+        }
+
+        //  to call a function, we use its name followed by parentheses.
+        greet("john"); // this will print "my name is John" to the console
+        greet("Kazeem"); // this will print "my name is Jane" to the console
+
+
+        function add(a, b) {
+            // console.log(a + b); // this will return the sum of a and b
+            const c = a + b
+            return c; // this will return the sum of a and b
+        }
+
+        const resultTwo = add(5, 10);
+        // this will return undefined because we are not 
+        // returning anything from the function 
+        console.log(resultTwo); 
+        
+        add(5, 10); // this will print 15 to the console
+
+        function multiply(a, b) {
+            const c = a * b// this will return the product of a and b
+            return c    // it just multiplies a and b
+        }
+
+        const result = multiply(5, 10);
+        // this will return output of multiplt 
+
+        console.log(result); // this will print undefined to the console
+    </script>
+</body>
+
+</html>
