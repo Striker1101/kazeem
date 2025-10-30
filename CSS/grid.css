@@ -1,0 +1,12 @@
+ .grid-container {
+      display: grid;
+      grid-template-columns: 75px 75px 75px;
+      grid-template-rows: 75px 75px;
+      gap: 32px;
+    }
+    ​ .card {
+      background-color: rgb(122, 82, 46);
+      border: 4px solid black;
+      height: 100px;
+      width: 100px;
+    }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <!-- <link rel="stylesheet" href="../CSS/grid.css" /> -->
+  </head>
+  <body>
+    <!-- grid -->
+    <div class="grid-container">
+      <div class="card" id="one"></div>
+      <div class="card" id="two"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </div>
+  </body>
+
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template: repeat(3, 150px) / 150px 150px 150px;
+      grid-column-gap: 4px;
+      grid-row-gap: 10px;
+      /* grid-area: 40px; */
+    }
+
+    .card {
+      border: 2px solid red;
+    }
+
+    #two {
+      grid-row: 2/3;
+      background-color: aquamarine;
+    }
+
+    #one {
+      grid-column: 1/6;
+      background-color: blue;
+    }
+  </style>
+</html>
